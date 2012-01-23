@@ -1,0 +1,232 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012521CA14CDC95500E12214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012521C914CDC95500E12214 /* Foundation.framework */; };
+		012521D014CDC95500E12214 /* StaticFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 012521CF14CDC95500E12214 /* StaticFramework.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		012521C614CDC95500E12214 /* libStaticFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStaticFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		012521C914CDC95500E12214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		012521CD14CDC95500E12214 /* StaticFramework-Prefix.pch */ = {isa = PBXFileReference; path = "StaticFramework-Prefix.pch"; sourceTree = "<group>"; };
+		012521CE14CDC95500E12214 /* StaticFramework.h */ = {isa = PBXFileReference; path = StaticFramework.h; sourceTree = "<group>"; };
+		012521CF14CDC95500E12214 /* StaticFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticFramework.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		012521C314CDC95500E12214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012521CA14CDC95500E12214 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012521BB14CDC95500E12214 = {
+			isa = PBXGroup;
+			children = (
+				012521CB14CDC95500E12214 /* StaticFramework */,
+				012521C814CDC95500E12214 /* Frameworks */,
+				012521C714CDC95500E12214 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		012521C714CDC95500E12214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				012521C614CDC95500E12214 /* libStaticFramework.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		012521C814CDC95500E12214 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				012521C914CDC95500E12214 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		012521CB14CDC95500E12214 /* StaticFramework */ = {
+			isa = PBXGroup;
+			children = (
+				012521CE14CDC95500E12214 /* StaticFramework.h */,
+				012521CF14CDC95500E12214 /* StaticFramework.m */,
+				012521CC14CDC95500E12214 /* Supporting Files */,
+			);
+			path = StaticFramework;
+			sourceTree = "<group>";
+		};
+		012521CC14CDC95500E12214 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				012521CD14CDC95500E12214 /* StaticFramework-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		012521C414CDC95500E12214 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		012521C514CDC95500E12214 /* StaticFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012521D314CDC95500E12214 /* Build configuration list for PBXNativeTarget "StaticFramework" */;
+			buildPhases = (
+				012521C214CDC95500E12214 /* Sources */,
+				012521C314CDC95500E12214 /* Frameworks */,
+				012521C414CDC95500E12214 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticFramework;
+			productName = StaticFramework;
+			productReference = 012521C614CDC95500E12214 /* libStaticFramework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		012521BD14CDC95500E12214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = VW;
+			};
+			buildConfigurationList = 012521C014CDC95500E12214 /* Build configuration list for PBXProject "StaticFramework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 012521BB14CDC95500E12214;
+			productRefGroup = 012521C714CDC95500E12214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012521C514CDC95500E12214 /* StaticFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		012521C214CDC95500E12214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012521D014CDC95500E12214 /* StaticFramework.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		012521D114CDC95500E12214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		012521D214CDC95500E12214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		012521D414CDC95500E12214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/StaticFramework.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StaticFramework/StaticFramework-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		012521D514CDC95500E12214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/StaticFramework.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StaticFramework/StaticFramework-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		012521C014CDC95500E12214 /* Build configuration list for PBXProject "StaticFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012521D114CDC95500E12214 /* Debug */,
+				012521D214CDC95500E12214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012521D314CDC95500E12214 /* Build configuration list for PBXNativeTarget "StaticFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012521D414CDC95500E12214 /* Debug */,
+				012521D514CDC95500E12214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 012521BD14CDC95500E12214 /* Project object */;
+}
