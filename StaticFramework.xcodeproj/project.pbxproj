@@ -55,9 +55,15 @@
 		012521CD14CDC95500E12214 /* StaticFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticFramework-Prefix.pch"; sourceTree = "<group>"; };
 		012521CE14CDC95500E12214 /* StaticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticFramework.h; sourceTree = "<group>"; };
 		012521CF14CDC95500E12214 /* StaticFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticFramework.m; sourceTree = "<group>"; };
+		0132564614E31A0A008CBA65 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
+		0132564714E31A13008CBA65 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
+		0132564814E31A31008CBA65 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
 		0142A15D14E2C1F200161065 /* SF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SF.h; sourceTree = "<group>"; };
 		0142A17D14E2D2D000161065 /* Sinatra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sinatra.h; sourceTree = "<group>"; };
 		0142A17E14E2D2D000161065 /* Sinatra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sinatra.m; sourceTree = "<group>"; };
+		01E3452914E31EF300E38E47 /* Aggregate-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Aggregate-Shared.xcconfig"; sourceTree = "<group>"; };
+		01E3452B14E31F7900E38E47 /* Aggregate-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Aggregate-Debug.xcconfig"; sourceTree = "<group>"; };
+		01E3452D14E31F8600E38E47 /* Aggregate-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Aggregate-Release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		012521BB14CDC95500E12214 = {
 			isa = PBXGroup;
 			children = (
+				0132564214E319B3008CBA65 /* Configurations */,
 				012521CB14CDC95500E12214 /* StaticFramework */,
 				012521C814CDC95500E12214 /* Frameworks */,
 				012521C714CDC95500E12214 /* Products */,
@@ -116,6 +123,35 @@
 				012521CD14CDC95500E12214 /* StaticFramework-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0132564214E319B3008CBA65 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				0132564514E319D3008CBA65 /* Target */,
+				0132564414E319C6008CBA65 /* Project */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		0132564414E319C6008CBA65 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				0132564614E31A0A008CBA65 /* Project-Shared.xcconfig */,
+				0132564714E31A13008CBA65 /* Project-Debug.xcconfig */,
+				0132564814E31A31008CBA65 /* Project-Release.xcconfig */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		0132564514E319D3008CBA65 /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				01E3452914E31EF300E38E47 /* Aggregate-Shared.xcconfig */,
+				01E3452B14E31F7900E38E47 /* Aggregate-Debug.xcconfig */,
+				01E3452D14E31F8600E38E47 /* Aggregate-Release.xcconfig */,
+			);
+			name = Target;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,12 +260,10 @@
 /* Begin XCBuildConfiguration section */
 		012521D114CDC95500E12214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0132564714E31A13008CBA65 /* Project-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -251,12 +285,10 @@
 		};
 		012521D214CDC95500E12214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0132564814E31A31008CBA65 /* Project-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					i386,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -277,10 +309,7 @@
 				DSTROOT = /tmp/StaticFramework.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StaticFramework/StaticFramework-Prefix.pch";
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -293,10 +322,7 @@
 				DSTROOT = /tmp/StaticFramework.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StaticFramework/StaticFramework-Prefix.pch";
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -304,6 +330,7 @@
 		};
 		012521D814CDC9AB00E12214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E3452B14E31F7900E38E47 /* Aggregate-Debug.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -311,6 +338,7 @@
 		};
 		012521D914CDC9AB00E12214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E3452D14E31F8600E38E47 /* Aggregate-Release.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
