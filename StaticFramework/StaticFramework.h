@@ -10,4 +10,6 @@
 
 @interface StaticFramework : NSObject
 
+- (NSString *)helloWorld;
+
 @end

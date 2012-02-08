@@ -20,4 +20,8 @@
     return self;
 }
 
+- (NSString *)helloWorld {
+  return @"This method should be included in static framework";
+}
+
 @end

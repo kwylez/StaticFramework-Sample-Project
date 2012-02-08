@@ -26,16 +26,24 @@
 		012521CA14CDC95500E12214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012521C914CDC95500E12214 /* Foundation.framework */; };
 		012521D014CDC95500E12214 /* StaticFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 012521CF14CDC95500E12214 /* StaticFramework.m */; };
 		012521DD14CDCA2200E12214 /* StaticFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 012521CE14CDC95500E12214 /* StaticFramework.h */; };
+		0142A15E14E2C1F200161065 /* SF.h in Headers */ = {isa = PBXBuildFile; fileRef = 0142A15D14E2C1F200161065 /* SF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0142A15F14E2C1F200161065 /* SF.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0142A15D14E2C1F200161065 /* SF.h */; };
+		0142A16714E2C31700161065 /* StaticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 012521CE14CDC95500E12214 /* StaticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0142A17F14E2D2D000161065 /* Sinatra.h in Headers */ = {isa = PBXBuildFile; fileRef = 0142A17D14E2D2D000161065 /* Sinatra.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0142A18014E2D2D000161065 /* Sinatra.m in Sources */ = {isa = PBXBuildFile; fileRef = 0142A17E14E2D2D000161065 /* Sinatra.m */; };
+		0142A18114E2D34600161065 /* Sinatra.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0142A17D14E2D2D000161065 /* Sinatra.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		012521DC14CDCA1000E12214 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${PRODUCT_NAME}.framework/Versions/A/Headers/";
+			dstPath = "${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${PRODUCT_NAME}.framework/Versions/A/Headers";
 			dstSubfolderSpec = 0;
 			files = (
+				0142A18114E2D34600161065 /* Sinatra.h in CopyFiles */,
 				012521DD14CDCA2200E12214 /* StaticFramework.h in CopyFiles */,
+				0142A15F14E2C1F200161065 /* SF.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +55,9 @@
 		012521CD14CDC95500E12214 /* StaticFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticFramework-Prefix.pch"; sourceTree = "<group>"; };
 		012521CE14CDC95500E12214 /* StaticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticFramework.h; sourceTree = "<group>"; };
 		012521CF14CDC95500E12214 /* StaticFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticFramework.m; sourceTree = "<group>"; };
+		0142A15D14E2C1F200161065 /* SF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SF.h; sourceTree = "<group>"; };
+		0142A17D14E2D2D000161065 /* Sinatra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sinatra.h; sourceTree = "<group>"; };
+		0142A17E14E2D2D000161065 /* Sinatra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sinatra.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +100,9 @@
 		012521CB14CDC95500E12214 /* StaticFramework */ = {
 			isa = PBXGroup;
 			children = (
+				0142A15D14E2C1F200161065 /* SF.h */,
+				0142A17D14E2D2D000161065 /* Sinatra.h */,
+				0142A17E14E2D2D000161065 /* Sinatra.m */,
 				012521CE14CDC95500E12214 /* StaticFramework.h */,
 				012521CF14CDC95500E12214 /* StaticFramework.m */,
 				012521CC14CDC95500E12214 /* Supporting Files */,
@@ -111,6 +125,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0142A15E14E2C1F200161065 /* SF.h in Headers */,
+				0142A16714E2C31700161065 /* StaticFramework.h in Headers */,
+				0142A17F14E2D2D000161065 /* Sinatra.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +205,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\" &&\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" &&\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\" &&\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}\" &&\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}.framework\" &&\n\n# Create framework directory structure.\nrm -rf \"${FRAMEWORK}\" &&\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Headers\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Resources\" &&\n\n# Generate universal binary for the device and simulator.\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\" &&\n\n# Move files to appropriate locations in framework paths.\ncp \"${UNIVERSAL_LIBRARY_PATH}\" \"${FRAMEWORK}/Versions/A\" &&\nln -s \"A\" \"${FRAMEWORK}/Versions/Current\" &&\nln -s \"Versions/Current/Headers\" \"${FRAMEWORK}/Headers\" &&\nln -s \"Versions/Current/Resources\" \"${FRAMEWORK}/Resources\" &&\nln -s \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK}/${PRODUCT_NAME}\"\n";
+			shellScript = "\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\" &&\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" &&\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\" &&\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}\" &&\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}.framework\" &&\n\n\n# Create framework directory structure.\nrm -rf \"${FRAMEWORK}\" &&\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Headers\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Resources\" &&\n\n# Generate universal binary for the device and simulator.\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\" &&\n\n# Move files to appropriate locations in framework paths.\ncp \"${UNIVERSAL_LIBRARY_PATH}\" \"${FRAMEWORK}/Versions/A\" &&\nln -s \"A\" \"${FRAMEWORK}/Versions/Current\" &&\nln -s \"Versions/Current/Headers\" \"${FRAMEWORK}/Headers\" &&\nln -s \"Versions/Current/Resources\" \"${FRAMEWORK}/Resources\" &&\nln -s \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK}/${PRODUCT_NAME}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -198,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				012521D014CDC95500E12214 /* StaticFramework.m in Sources */,
+				0142A18014E2D2D000161065 /* Sinatra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +277,10 @@
 				DSTROOT = /tmp/StaticFramework.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StaticFramework/StaticFramework-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -272,7 +293,10 @@
 				DSTROOT = /tmp/StaticFramework.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StaticFramework/StaticFramework-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
