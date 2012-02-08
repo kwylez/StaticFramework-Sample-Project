@@ -1,0 +1,11 @@
+//
+//  Project-Release.xcconfig
+//  StaticFramework
+//
+//  Created by Cory D. Wiles on 2/8/12.
+//  Copyright (c) 2012 VW. All rights reserved.
+//
+#include "Project-Shared.xcconfig"
+VALIDATE_PRODUCT = YES
+COPY_PHASE_STRIP = YES
+
