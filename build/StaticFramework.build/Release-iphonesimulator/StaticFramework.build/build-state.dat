@@ -1,108 +1,0 @@
-TStaticFramework
-v4
-r1
-cCheck dependencies
-cProcessPCH /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-gfvqmzktixcrwnemiyzefrzbmdlg/StaticFramework-Prefix.pch.pth StaticFramework/StaticFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.o /Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator/libStaticFramework.a normal i386
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
-c000000004EDD27210000000000000110
-t1323116321
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004E72F2960000000000353830
-t1316156054
-s3487792
-
-N/Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework-Prefix.pch
-c000000004F1D91D500000000000000A9
-t1327337941
-s169
-
-N/Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework.h
-c000000004F1D91D500000000000000DC
-t1327337941
-s220
-
-N/Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework.m
-c000000004F1D91D5000000000000014A
-t1327337941
-s330
-
-N/Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator/libStaticFramework.a
-t2
-s0
-
-N/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.LinkFileList
-c000000004F2F3E500000000000000096
-t1328496208
-s150
-
-N/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.o
-t2
-s0
-
-N/var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-ebgncyzzcqjsebenuksdiniznbhq/StaticFramework-Prefix.pch.pth
-t2
-s0
-
-N/var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-gfvqmzktixcrwnemiyzefrzbmdlg/StaticFramework-Prefix.pch.pth
-t2
-s0
-
-CCheck dependencies
-r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies96b36bd075dfb441^e00f6fd075dfb441^---0#1#0#--18"Check dependencies36"D7FC5B68-7FEA-4251-A272-1CF8AF800288-
-
-CCompileC build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.o /Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s350189008.731265
-e350189008.811213
-r1
-xCompileC
-xbuild/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.o
-x/Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework.mf966bbd075dfb441^aabacfd075dfb441^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework.m0000000000000000^2951"CompileC build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.o StaticFramework/StaticFramework.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cwiles/Desktop/StaticFramework    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-generated-files.hmap -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-own-target-headers.hmap -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-all-target-headers.hmap -iquote /Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-project-headers.hmap -I/Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator/include -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources/i386 -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources -F/Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator -include /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-gfvqmzktixcrwnemiyzefrzbmdlg/StaticFramework-Prefix.pch -MMD -MT dependencies -MF /Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.d -c /Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework.m -o /Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.o36"B6010CA7-F3C9-4C49-9F49-294C0EAC08F5-
-
-CLibtool /Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator/libStaticFramework.a normal i386
-s350189008.819194
-e350189008.827417
-r1
-xLibtool
-x/Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator/libStaticFramework.a
-xnormal
-xi386
-o/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Libtool build/Release-iphonesimulator/libStaticFramework.a normal i386a4e4d1d075dfb441^ccd1d3d075dfb441^---0#0#0#--921"Libtool build/Release-iphonesimulator/libStaticFramework.a normal i386    cd /Users/cwiles/Desktop/StaticFramework    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -L/Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator -filelist /Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.LinkFileList -ObjC -framework Foundation -o /Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator/libStaticFramework.a36"8A7D1EE3-3A00-4604-8927-5E3771D873AA-
-
-CProcessPCH /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-ebgncyzzcqjsebenuksdiniznbhq/StaticFramework-Prefix.pch.pth StaticFramework/StaticFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s349111150.428070
-e349111150.538452
-r1
-xProcessPCH
-x/var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-ebgncyzzcqjsebenuksdiniznbhq/StaticFramework-Prefix.pch.pth
-xStaticFramework/StaticFramework-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Precompile StaticFramework/StaticFramework-Prefix.pchc4d16d6e03cfb441^aad7896e03cfb441^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework-Prefix.pch0000000000000000^3008"ProcessPCH /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-ebgncyzzcqjsebenuksdiniznbhq/StaticFramework-Prefix.pch.pth StaticFramework/StaticFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cwiles/Desktop/StaticFramework    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Users/cwiles/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/cwiles/bin:/Users/cwiles/Scripts"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-generated-files.hmap -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-own-target-headers.hmap -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-all-target-headers.hmap -iquote /Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-project-headers.hmap -I/Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator/include -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources/i386 -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources -F/Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator -c /Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework-Prefix.pch -o /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-ebgncyzzcqjsebenuksdiniznbhq/StaticFramework-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-ebgncyzzcqjsebenuksdiniznbhq/StaticFramework-Prefix.pch.d36"3D0A0078-1944-4D20-8CBB-A16510DAE5A0-
-
-CProcessPCH /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-gfvqmzktixcrwnemiyzefrzbmdlg/StaticFramework-Prefix.pch.pth StaticFramework/StaticFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s350189008.436950
-e350189008.724000
-r1
-xProcessPCH
-x/var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-gfvqmzktixcrwnemiyzefrzbmdlg/StaticFramework-Prefix.pch.pth
-xStaticFramework/StaticFramework-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Precompile StaticFramework/StaticFramework-Prefix.pch6e1570d075dfb441^ef57b9d075dfb441^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework-Prefix.pch0000000000000000^2913"ProcessPCH /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-gfvqmzktixcrwnemiyzefrzbmdlg/StaticFramework-Prefix.pch.pth StaticFramework/StaticFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/cwiles/Desktop/StaticFramework    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-generated-files.hmap -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-own-target-headers.hmap -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-all-target-headers.hmap -iquote /Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-project-headers.hmap -I/Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator/include -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources/i386 -I/Users/cwiles/Desktop/StaticFramework/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources -F/Users/cwiles/Desktop/StaticFramework/build/Release-iphonesimulator -c /Users/cwiles/Desktop/StaticFramework/StaticFramework/StaticFramework-Prefix.pch -o /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-gfvqmzktixcrwnemiyzefrzbmdlg/StaticFramework-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/9m/1mj32x616fq7lqnkwjlbgsv00000gp/C/com.apple.Xcode.502/SharedPrecompiledHeaders/StaticFramework-Prefix-gfvqmzktixcrwnemiyzefrzbmdlg/StaticFramework-Prefix.pch.d36"63937D69-F26E-4EDD-9CFA-51D1557A6EE1-
-
