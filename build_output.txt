@@ -255,18 +255,18 @@ PhaseScriptExecution "Build Static Lib" build/StaticFramework.build/Release-ipho
     setenv VERSION_INFO_FILE StaticFramework-iOS_vers.c
     setenv VERSION_INFO_STRING "\"@(#)PROGRAM:StaticFramework-iOS  PROJECT:StaticFramework-\""
     setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode
-    setenv XCODE_PRODUCT_BUILD_VERSION 4D199
-    setenv XCODE_VERSION_ACTUAL 0420
+    setenv XCODE_PRODUCT_BUILD_VERSION 4D502
+    setenv XCODE_VERSION_ACTUAL 0421
     setenv XCODE_VERSION_MAJOR 0400
     setenv XCODE_VERSION_MINOR 0420
     setenv YACC /Developer/usr/bin/yacc
     /bin/sh -c /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphoneos/StaticFramework-iOS.build/Script-012521DA14CDC9BC00E12214.sh
-2012-02-07 20:24:22.725 xcodebuild[36001:a03] WARNING: skipping plug-in at path '/Users/dewindj/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CodePilot.xcplugin' because it is not compatible with this version of Xcode.
-2012-02-07 20:24:22.752 xcodebuild[36001:a03] Error loading /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2:  dlopen(/Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2, 265): Symbol not found: _OBJC_CLASS_$_IDEDocumentController
+2012-02-07 20:37:39.284 xcodebuild[36990:d03] WARNING: skipping plug-in at path '/Users/dewindj/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CodePilot.xcplugin' because it is not compatible with this version of Xcode.
+2012-02-07 20:37:39.321 xcodebuild[36990:d03] Error loading /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2:  dlopen(/Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2, 265): Symbol not found: _OBJC_CLASS_$_IDEDocumentController
   Referenced from: /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2
   Expected in: flat namespace
  in /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2
-2012-02-07 20:24:22.753 xcodebuild[36001:a03] WARNING: Failed to load plugin at: /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin, skipping.  Could not load bundle.
+2012-02-07 20:37:39.322 xcodebuild[36990:d03] WARNING: Failed to load plugin at: /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin, skipping.  Could not load bundle.
 Build settings from command line:
     SDKROOT = iphonesimulator5.0
 
@@ -276,8 +276,8 @@ Check dependencies
 Clean.Remove clean build/Release-iphonesimulator/libStaticFramework.a
     builtin-rm -rf /Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphonesimulator/libStaticFramework.a
 
-Clean.Remove clean /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-dcgloflmnxcmdsbnvbjxswjugwzd/StaticFramework-Prefix.pch.pth
-    builtin-rm -rf /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-dcgloflmnxcmdsbnvbjxswjugwzd/StaticFramework-Prefix.pch.pth
+Clean.Remove clean /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-cxjcrmpeyemwpnbzqjjkdtrcdpww/StaticFramework-Prefix.pch.pth
+    builtin-rm -rf /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-cxjcrmpeyemwpnbzqjjkdtrcdpww/StaticFramework-Prefix.pch.pth
 
 Clean.Remove clean build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build
     builtin-rm -rf /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build
@@ -289,17 +289,17 @@ Clean.Remove clean build/StaticFramework.build/Release-iphonesimulator/StaticFra
 === BUILD NATIVE TARGET StaticFramework OF PROJECT StaticFramework WITH CONFIGURATION Release ===
 Check dependencies
 
-ProcessPCH /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-dcgloflmnxcmdsbnvbjxswjugwzd/StaticFramework-Prefix.pch.pth StaticFramework/StaticFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+ProcessPCH /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-cxjcrmpeyemwpnbzqjjkdtrcdpww/StaticFramework-Prefix.pch.pth StaticFramework/StaticFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
     cd /Users/dewindj/git/StaticFramework-Sample-Project
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Users/dewindj/.rvm/gems/ruby-1.9.2-p290/bin:/Users/dewindj/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/dewindj/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/dewindj/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/Users/dewindj/jruby/bin:/Users/dewindj/bin:/usr/local/rvm/bin:/Developer/usr/bin:/Users/dewindj/SDKS/android-sdk-mac_86/tools/:/bin:/usr/sbin:/sbin:/usr/X11/bin"
-    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-generated-files.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-own-target-headers.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-all-target-headers.hmap -iquote /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-project-headers.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphonesimulator/include -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources/i386 -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources -F/Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphonesimulator -c /Users/dewindj/git/StaticFramework-Sample-Project/StaticFramework/StaticFramework-Prefix.pch -o /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-dcgloflmnxcmdsbnvbjxswjugwzd/StaticFramework-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-dcgloflmnxcmdsbnvbjxswjugwzd/StaticFramework-Prefix.pch.d
+    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-generated-files.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-own-target-headers.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-all-target-headers.hmap -iquote /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-project-headers.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphonesimulator/include -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources/i386 -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources -F/Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphonesimulator -c /Users/dewindj/git/StaticFramework-Sample-Project/StaticFramework/StaticFramework-Prefix.pch -o /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-cxjcrmpeyemwpnbzqjjkdtrcdpww/StaticFramework-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-cxjcrmpeyemwpnbzqjjkdtrcdpww/StaticFramework-Prefix.pch.d
 
 CompileC build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.o StaticFramework/StaticFramework.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
     cd /Users/dewindj/git/StaticFramework-Sample-Project
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Users/dewindj/.rvm/gems/ruby-1.9.2-p290/bin:/Users/dewindj/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/dewindj/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/dewindj/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/Users/dewindj/jruby/bin:/Users/dewindj/bin:/usr/local/rvm/bin:/Developer/usr/bin:/Users/dewindj/SDKS/android-sdk-mac_86/tools/:/bin:/usr/sbin:/sbin:/usr/X11/bin"
-    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-generated-files.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-own-target-headers.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-all-target-headers.hmap -iquote /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-project-headers.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphonesimulator/include -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources/i386 -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources -F/Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphonesimulator -include /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-dcgloflmnxcmdsbnvbjxswjugwzd/StaticFramework-Prefix.pch -MMD -MT dependencies -MF /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.d -c /Users/dewindj/git/StaticFramework-Sample-Project/StaticFramework/StaticFramework.m -o /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.o
+    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-generated-files.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-own-target-headers.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-all-target-headers.hmap -iquote /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/StaticFramework-project-headers.hmap -I/Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphonesimulator/include -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources/i386 -I/Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/DerivedSources -F/Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphonesimulator -include /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-cxjcrmpeyemwpnbzqjjkdtrcdpww/StaticFramework-Prefix.pch -MMD -MT dependencies -MF /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.d -c /Users/dewindj/git/StaticFramework-Sample-Project/StaticFramework/StaticFramework.m -o /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphonesimulator/StaticFramework.build/Objects-normal/i386/StaticFramework.o
 
 Libtool build/Release-iphonesimulator/libStaticFramework.a normal i386
     cd /Users/dewindj/git/StaticFramework-Sample-Project
@@ -310,26 +310,26 @@ Libtool build/Release-iphonesimulator/libStaticFramework.a normal i386
 
 ** BUILD SUCCEEDED **
 
-2012-02-07 20:24:23.286 xcodebuild[36033:a03] WARNING: skipping plug-in at path '/Users/dewindj/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CodePilot.xcplugin' because it is not compatible with this version of Xcode.
-2012-02-07 20:24:23.313 xcodebuild[36033:a03] Error loading /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2:  dlopen(/Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2, 265): Symbol not found: _OBJC_CLASS_$_IDEDocumentController
+2012-02-07 20:37:40.322 xcodebuild[37031:d03] WARNING: skipping plug-in at path '/Users/dewindj/Library/Application Support/Developer/Shared/Xcode/Plug-ins/CodePilot.xcplugin' because it is not compatible with this version of Xcode.
+2012-02-07 20:37:40.359 xcodebuild[37031:d03] Error loading /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2:  dlopen(/Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2, 265): Symbol not found: _OBJC_CLASS_$_IDEDocumentController
   Referenced from: /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2
   Expected in: flat namespace
  in /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin/Contents/MacOS/CodePilot2
-2012-02-07 20:24:23.314 xcodebuild[36033:a03] WARNING: Failed to load plugin at: /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin, skipping.  Could not load bundle.
+2012-02-07 20:37:40.360 xcodebuild[37031:d03] WARNING: Failed to load plugin at: /Users/dewindj/Library/Developer/Xcode/Third-Party Plug-ins/CodePilot2.xcplugin, skipping.  Could not load bundle.
 Build settings from command line:
     SDKROOT = iphoneos5.0
 
 === CLEAN NATIVE TARGET StaticFramework OF PROJECT StaticFramework WITH CONFIGURATION Release ===
 Check dependencies
 
+Clean.Remove clean build/StaticFramework.build/Release-iphoneos/StaticFramework.build
+    builtin-rm -rf /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphoneos/StaticFramework.build
+
 Clean.Remove clean build/Release-iphoneos/libStaticFramework.a
     builtin-rm -rf /Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphoneos/libStaticFramework.a
 
 Clean.Remove clean /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-bahydbecgsrnrhefxjtzjueeamiu/StaticFramework-Prefix.pch.pth
     builtin-rm -rf /var/folders/v5/74m5th1n2h19lmxcv0ndz2000000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/StaticFramework-Prefix-bahydbecgsrnrhefxjtzjueeamiu/StaticFramework-Prefix.pch.pth
-
-Clean.Remove clean build/StaticFramework.build/Release-iphoneos/StaticFramework.build
-    builtin-rm -rf /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphoneos/StaticFramework.build
 
 
 ** CLEAN SUCCEEDED **
@@ -611,12 +611,17 @@ PhaseScriptExecution "Build Universal Framework" build/StaticFramework.build/Rel
     setenv VERSION_INFO_FILE StaticFramework-iOS_vers.c
     setenv VERSION_INFO_STRING "\"@(#)PROGRAM:StaticFramework-iOS  PROJECT:StaticFramework-\""
     setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode
-    setenv XCODE_PRODUCT_BUILD_VERSION 4D199
-    setenv XCODE_VERSION_ACTUAL 0420
+    setenv XCODE_PRODUCT_BUILD_VERSION 4D502
+    setenv XCODE_VERSION_ACTUAL 0421
     setenv XCODE_VERSION_MAJOR 0400
     setenv XCODE_VERSION_MINOR 0420
     setenv YACC /Developer/usr/bin/yacc
     /bin/sh -c /Users/dewindj/git/StaticFramework-Sample-Project/build/StaticFramework.build/Release-iphoneos/StaticFramework-iOS.build/Script-012521DB14CDC9E200E12214.sh
+
+PBXCp StaticFramework/StaticFramework.h build/Release-iphoneuniversal/StaticFramework-iOS.framework/Versions/A/Headers/StaticFramework.h
+    cd /Users/dewindj/git/StaticFramework-Sample-Project
+    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/Users/dewindj/.rvm/gems/ruby-1.9.2-p290/bin:/Users/dewindj/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/dewindj/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/dewindj/.rvm/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/Users/dewindj/jruby/bin:/Users/dewindj/bin:/usr/local/rvm/bin:/Developer/usr/bin:/Users/dewindj/SDKS/android-sdk-mac_86/tools/:/bin:/usr/sbin:/sbin:/usr/X11/bin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -resolve-src-symlinks /Users/dewindj/git/StaticFramework-Sample-Project/StaticFramework/StaticFramework.h /Users/dewindj/git/StaticFramework-Sample-Project/build/Release-iphoneuniversal/StaticFramework-iOS.framework/Versions/A/Headers
 
 
 ** BUILD SUCCEEDED **
