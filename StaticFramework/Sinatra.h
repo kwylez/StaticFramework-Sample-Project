@@ -11,5 +11,6 @@
 @interface Sinatra : NSObject
 
 - (NSString *)iHaveTheWorldOnAString;
+- (NSString *)helloWorld;
 
 @end

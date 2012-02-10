@@ -14,4 +14,8 @@
   return @"...and I'm sittin' on a rainbow";
 }
 
+- (NSString *)helloWorld {
+  return @"This method should be included in static framework";
+}
+
 @end
