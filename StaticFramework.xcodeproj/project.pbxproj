@@ -24,10 +24,7 @@
 
 /* Begin PBXBuildFile section */
 		012521CA14CDC95500E12214 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 012521C914CDC95500E12214 /* Foundation.framework */; };
-		012521D014CDC95500E12214 /* StaticFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 012521CF14CDC95500E12214 /* StaticFramework.m */; };
 		012521DD14CDCA2200E12214 /* StaticFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 012521CE14CDC95500E12214 /* StaticFramework.h */; };
-		0142A15E14E2C1F200161065 /* SF.h in Headers */ = {isa = PBXBuildFile; fileRef = 0142A15D14E2C1F200161065 /* SF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0142A15F14E2C1F200161065 /* SF.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0142A15D14E2C1F200161065 /* SF.h */; };
 		0142A16714E2C31700161065 /* StaticFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 012521CE14CDC95500E12214 /* StaticFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0142A17F14E2D2D000161065 /* Sinatra.h in Headers */ = {isa = PBXBuildFile; fileRef = 0142A17D14E2D2D000161065 /* Sinatra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0142A18014E2D2D000161065 /* Sinatra.m in Sources */ = {isa = PBXBuildFile; fileRef = 0142A17E14E2D2D000161065 /* Sinatra.m */; };
@@ -43,7 +40,6 @@
 			files = (
 				0142A18114E2D34600161065 /* Sinatra.h in CopyFiles */,
 				012521DD14CDCA2200E12214 /* StaticFramework.h in CopyFiles */,
-				0142A15F14E2C1F200161065 /* SF.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,11 +50,9 @@
 		012521C914CDC95500E12214 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		012521CD14CDC95500E12214 /* StaticFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticFramework-Prefix.pch"; sourceTree = "<group>"; };
 		012521CE14CDC95500E12214 /* StaticFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StaticFramework.h; sourceTree = "<group>"; };
-		012521CF14CDC95500E12214 /* StaticFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticFramework.m; sourceTree = "<group>"; };
 		0132564614E31A0A008CBA65 /* Project-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Shared.xcconfig"; sourceTree = "<group>"; };
 		0132564714E31A13008CBA65 /* Project-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Debug.xcconfig"; sourceTree = "<group>"; };
 		0132564814E31A31008CBA65 /* Project-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Project-Release.xcconfig"; sourceTree = "<group>"; };
-		0142A15D14E2C1F200161065 /* SF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SF.h; sourceTree = "<group>"; };
 		0142A17D14E2D2D000161065 /* Sinatra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sinatra.h; sourceTree = "<group>"; };
 		0142A17E14E2D2D000161065 /* Sinatra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sinatra.m; sourceTree = "<group>"; };
 		01E3452914E31EF300E38E47 /* Aggregate-Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Aggregate-Shared.xcconfig"; sourceTree = "<group>"; };
@@ -107,11 +101,9 @@
 		012521CB14CDC95500E12214 /* StaticFramework */ = {
 			isa = PBXGroup;
 			children = (
-				0142A15D14E2C1F200161065 /* SF.h */,
 				0142A17D14E2D2D000161065 /* Sinatra.h */,
 				0142A17E14E2D2D000161065 /* Sinatra.m */,
 				012521CE14CDC95500E12214 /* StaticFramework.h */,
-				012521CF14CDC95500E12214 /* StaticFramework.m */,
 				012521CC14CDC95500E12214 /* Supporting Files */,
 			);
 			path = StaticFramework;
@@ -161,7 +153,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0142A15E14E2C1F200161065 /* SF.h in Headers */,
 				0142A16714E2C31700161065 /* StaticFramework.h in Headers */,
 				0142A17F14E2D2D000161065 /* Sinatra.h in Headers */,
 			);
@@ -227,7 +218,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos\n";
+			shellScript = "echo \"BUILD DIRECTORY ${BUILD_DIR}\"\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos\n";
 		};
 		012521DB14CDC9E200E12214 /* Build Universal Framework */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -250,7 +241,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012521D014CDC95500E12214 /* StaticFramework.m in Sources */,
 				0142A18014E2D2D000161065 /* Sinatra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
