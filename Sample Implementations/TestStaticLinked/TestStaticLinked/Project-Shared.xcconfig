@@ -1,0 +1,9 @@
+//
+//  Project-Shared.xcconfig
+//  TestStaticLinked
+//
+//  Created by Cory D. Wiles on 2/10/12.
+//  Copyright (c) 2012 VW. All rights reserved.
+//
+
+USER_HEADER_SEARCH_PATHS = /Users/cwiles/iOS/Personal/StaticFramework-Sample-Project/**
