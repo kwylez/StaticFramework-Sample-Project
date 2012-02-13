@@ -1,0 +1,17 @@
+//
+//  Config.xcconfig
+//  StaticFramework
+//
+//  Created by Cory D. Wiles on 2/8/12.
+//  Copyright (c) 2012 VW. All rights reserved.
+//
+
+#include "Aggregate-Shared.xcconfig"
+
+// Where should the file be created
+//BUILD_DIR = /Users/cwiles/Desktop/BuildMe
+
+// You can change the target name to something else if you want
+//TARGET_NAME = MYCOOLFRAMEWORK
+
+PRODUCT_NAME = $(TARGET_NAME)
