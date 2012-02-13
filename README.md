@@ -1,7 +1,8 @@
 ## Description
 Test Xcode Project for building a universal framework, as well as, a static framework.  Included in this project are:
-* Static library project that when built will also create a universal framework
-* Sample implementation projects to show the setup/usage for the static library and the universal framework
+
+  - Static library project that when built will also create a universal framework
+  - Sample implementation projects to show the setup/usage for the static library and the universal framework
 
 The project and target settings are configuration based so you shouldn't have to modify the settings from the info pane
 
