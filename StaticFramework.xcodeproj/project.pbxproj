@@ -184,7 +184,7 @@
 		012521BD14CDC95500E12214 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = VW;
 			};
 			buildConfigurationList = 012521C014CDC95500E12214 /* Build configuration list for PBXProject "StaticFramework" */;
